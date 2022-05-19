@@ -1,0 +1,15 @@
+C:\Users\Administrator\Desktop\Repositorio Github\DBActivoFijo\DepreciationDBApp.Domain\bin\Release\net5.0\DepreciationDBApp.Domain.deps.json
+C:\Users\Administrator\Desktop\Repositorio Github\DBActivoFijo\DepreciationDBApp.Domain\bin\Release\net5.0\DepreciationDBApp.Domain.runtimeconfig.json
+C:\Users\Administrator\Desktop\Repositorio Github\DBActivoFijo\DepreciationDBApp.Domain\bin\Release\net5.0\DepreciationDBApp.Domain.runtimeconfig.dev.json
+C:\Users\Administrator\Desktop\Repositorio Github\DBActivoFijo\DepreciationDBApp.Domain\bin\Release\net5.0\DepreciationDBApp.Domain.dll
+C:\Users\Administrator\Desktop\Repositorio Github\DBActivoFijo\DepreciationDBApp.Domain\bin\Release\net5.0\DepreciationDBApp.Domain.pdb
+C:\Users\Administrator\Desktop\Repositorio Github\DBActivoFijo\DepreciationDBApp.Domain\obj\Release\net5.0\DepreciationDBApp.Domain.csproj.AssemblyReference.cache
+C:\Users\Administrator\Desktop\Repositorio Github\DBActivoFijo\DepreciationDBApp.Domain\obj\Release\net5.0\DepreciationDBApp.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Administrator\Desktop\Repositorio Github\DBActivoFijo\DepreciationDBApp.Domain\obj\Release\net5.0\DepreciationDBApp.Domain.AssemblyInfoInputs.cache
+C:\Users\Administrator\Desktop\Repositorio Github\DBActivoFijo\DepreciationDBApp.Domain\obj\Release\net5.0\DepreciationDBApp.Domain.AssemblyInfo.cs
+C:\Users\Administrator\Desktop\Repositorio Github\DBActivoFijo\DepreciationDBApp.Domain\obj\Release\net5.0\DepreciationDBApp.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\Repositorio Github\DBActivoFijo\DepreciationDBApp.Domain\obj\Release\net5.0\DepreciationDBApp.Domain.dll
+C:\Users\Administrator\Desktop\Repositorio Github\DBActivoFijo\DepreciationDBApp.Domain\obj\Release\net5.0\refint\DepreciationDBApp.Domain.dll
+C:\Users\Administrator\Desktop\Repositorio Github\DBActivoFijo\DepreciationDBApp.Domain\obj\Release\net5.0\DepreciationDBApp.Domain.pdb
+C:\Users\Administrator\Desktop\Repositorio Github\DBActivoFijo\DepreciationDBApp.Domain\obj\Release\net5.0\DepreciationDBApp.Domain.genruntimeconfig.cache
+C:\Users\Administrator\Desktop\Repositorio Github\DBActivoFijo\DepreciationDBApp.Domain\obj\Release\net5.0\ref\DepreciationDBApp.Domain.dll

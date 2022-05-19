@@ -1,0 +1,8 @@
+C:\Users\Administrator\Desktop\Repositorio Github\DBActivoFijo\DepreciationDBApp\obj\Debug\net5.0-windows\DepreciationDBApp.Presentation.csproj.AssemblyReference.cache
+C:\Users\Administrator\Desktop\Repositorio Github\DBActivoFijo\DepreciationDBApp\obj\Debug\net5.0-windows\DepreciationDBApp.Forms.Form1.resources
+C:\Users\Administrator\Desktop\Repositorio Github\DBActivoFijo\DepreciationDBApp\obj\Debug\net5.0-windows\DepreciationDBApp.Presentation.Properties.Resources.resources
+C:\Users\Administrator\Desktop\Repositorio Github\DBActivoFijo\DepreciationDBApp\obj\Debug\net5.0-windows\DepreciationDBApp.Presentation.csproj.GenerateResource.cache
+C:\Users\Administrator\Desktop\Repositorio Github\DBActivoFijo\DepreciationDBApp\obj\Debug\net5.0-windows\DepreciationDBApp.Presentation.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Administrator\Desktop\Repositorio Github\DBActivoFijo\DepreciationDBApp\obj\Debug\net5.0-windows\DepreciationDBApp.Presentation.AssemblyInfoInputs.cache
+C:\Users\Administrator\Desktop\Repositorio Github\DBActivoFijo\DepreciationDBApp\obj\Debug\net5.0-windows\DepreciationDBApp.Presentation.AssemblyInfo.cs
+C:\Users\Administrator\Desktop\Repositorio Github\DBActivoFijo\DepreciationDBApp\obj\Debug\net5.0-windows\DepreciationDBApp.Presentation.csproj.CoreCompileInputs.cache
