@@ -1,4 +1,6 @@
 ﻿
+using DepreciationDBApp.Domain.Enums;
+
 namespace DepreciationDBApp.Forms
 {
     partial class Form1
@@ -47,13 +49,14 @@ namespace DepreciationDBApp.Forms
             this.label6 = new System.Windows.Forms.Label();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButton2 = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButton3 = new System.Windows.Forms.ToolStripButton();
             this.labelCode = new System.Windows.Forms.Label();
             this.labelCodigo = new System.Windows.Forms.Label();
             this.buttonUpdate = new System.Windows.Forms.Button();
             this.buttonClear = new System.Windows.Forms.Button();
             this.errorProviderValorR = new System.Windows.Forms.ErrorProvider(this.components);
             this.buttonCancel = new System.Windows.Forms.Button();
-            this.toolStripButton2 = new System.Windows.Forms.ToolStripButton();
             ((System.ComponentModel.ISupportInitialize)(this.dgvAsset)).BeginInit();
             this.toolStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errorProviderValorR)).BeginInit();
@@ -72,12 +75,21 @@ namespace DepreciationDBApp.Forms
             // 
             // dgvAsset
             // 
+            this.dgvAsset.AllowUserToAddRows = false;
+            this.dgvAsset.AllowUserToDeleteRows = false;
+            this.dgvAsset.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.dgvAsset.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvAsset.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvAsset.GridColor = System.Drawing.SystemColors.ButtonShadow;
             this.dgvAsset.Location = new System.Drawing.Point(14, 224);
             this.dgvAsset.Name = "dgvAsset";
+            this.dgvAsset.ReadOnly = true;
+            this.dgvAsset.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
             this.dgvAsset.RowTemplate.Height = 25;
+            this.dgvAsset.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvAsset.Size = new System.Drawing.Size(919, 261);
             this.dgvAsset.TabIndex = 1;
+            this.dgvAsset.TabStop = false;
             // 
             // textBoxNombre
             // 
@@ -167,8 +179,8 @@ namespace DepreciationDBApp.Forms
             this.comboBoxEstado.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.comboBoxEstado.FormattingEnabled = true;
             this.comboBoxEstado.Items.AddRange(new object[] {
-            "Disponible",
-            "No disponible"});
+            DepreciationDBApp.Domain.Enums.AssetStatus.Disponible,
+            DepreciationDBApp.Domain.Enums.AssetStatus.NoDisponible});
             this.comboBoxEstado.Location = new System.Drawing.Point(311, 125);
             this.comboBoxEstado.Name = "comboBoxEstado";
             this.comboBoxEstado.Size = new System.Drawing.Size(148, 23);
@@ -187,7 +199,8 @@ namespace DepreciationDBApp.Forms
             // 
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripButton1,
-            this.toolStripButton2});
+            this.toolStripButton2,
+            this.toolStripButton3});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.Size = new System.Drawing.Size(945, 25);
@@ -202,6 +215,24 @@ namespace DepreciationDBApp.Forms
             this.toolStripButton1.Size = new System.Drawing.Size(62, 22);
             this.toolStripButton1.Text = "Buscar";
             this.toolStripButton1.Click += new System.EventHandler(this.toolStripButton1_Click);
+            // 
+            // toolStripButton2
+            // 
+            this.toolStripButton2.Image = global::DepreciationDBApp.Presentation.Properties.Resources.Employee;
+            this.toolStripButton2.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton2.Name = "toolStripButton2";
+            this.toolStripButton2.Size = new System.Drawing.Size(80, 22);
+            this.toolStripButton2.Text = "Empleado";
+            this.toolStripButton2.Click += new System.EventHandler(this.toolStripButton2_Click);
+            // 
+            // toolStripButton3
+            // 
+            this.toolStripButton3.Image = global::DepreciationDBApp.Presentation.Properties.Resources.Asignar;
+            this.toolStripButton3.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton3.Name = "toolStripButton3";
+            this.toolStripButton3.Size = new System.Drawing.Size(67, 22);
+            this.toolStripButton3.Text = "Asignar";
+            this.toolStripButton3.Click += new System.EventHandler(this.toolStripButton3_Click);
             // 
             // labelCode
             // 
@@ -258,15 +289,6 @@ namespace DepreciationDBApp.Forms
             this.buttonCancel.UseVisualStyleBackColor = true;
             this.buttonCancel.Click += new System.EventHandler(this.button1_Click_1);
             // 
-            // toolStripButton2
-            // 
-            this.toolStripButton2.Image = global::DepreciationDBApp.Presentation.Properties.Resources.Employee;
-            this.toolStripButton2.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton2.Name = "toolStripButton2";
-            this.toolStripButton2.Size = new System.Drawing.Size(80, 22);
-            this.toolStripButton2.Text = "Empleado";
-            this.toolStripButton2.Click += new System.EventHandler(this.toolStripButton2_Click);
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -319,7 +341,8 @@ namespace DepreciationDBApp.Forms
                 this.Text = $"Activo con ID = {Form1.idActivo}";
             }
             
-        } 
+        }
+        protected void LoadDataSource() => assetService.GetAll();
 
 
         #endregion
@@ -347,6 +370,7 @@ namespace DepreciationDBApp.Forms
         private System.Windows.Forms.ErrorProvider errorProviderValorR;
         private System.Windows.Forms.Button buttonCancel;
         private System.Windows.Forms.ToolStripButton toolStripButton2;
+        private System.Windows.Forms.ToolStripButton toolStripButton3;
     }
 }
 

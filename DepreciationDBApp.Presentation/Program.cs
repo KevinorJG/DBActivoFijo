@@ -4,6 +4,7 @@ using DepreciationDBApp.Domain.Entities;
 using DepreciationDBApp.Domain.Interfaces;
 using DepreciationDBApp.Forms;
 using DepreciationDBApp.Infrastructure.Repositories;
+using DepreciationDBApp.Presentation.Forms;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -54,7 +55,12 @@ namespace DepreciationDBApp.Presentation
             services.AddScoped<IAssetService, AssetService>();
             services.AddScoped<IEmpleadoRepository, EFEmpleadoRepository>();
             services.AddScoped<IEmployeeServices, EmployeeServices>();
+            services.AddScoped<IAssetEmployeeRepository, EFAssetEmployeeRepository>();
+            services.AddScoped<IAssetEmployeeServices, AssetEmployeeServices>();
+            services.AddScoped<IExcelRepository, ExcelAndEmailRepository>();
+            services.AddScoped<IExcelServices, ExcelServices>();
             services.AddScoped<Form1>();
+            services.AddScoped<FormAsignar>();
 
             using (var serviceScope = services.BuildServiceProvider())
             {

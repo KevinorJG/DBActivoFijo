@@ -31,7 +31,7 @@ namespace DepreciationDBApp.Applications.Services
 
         public Empleado FindByDni(string dni)
         {
-            throw new NotImplementedException();
+            return empleadoRepository.FindByDni(dni);
         }
 
         public IEnumerable<Empleado> FindByLastNames(string lastnames)

@@ -14,5 +14,6 @@
   </ItemGroup>
   <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <PkgNewtonsoft_Json Condition=" '$(PkgNewtonsoft_Json)' == '' ">C:\Users\Administrator\.nuget\packages\newtonsoft.json\10.0.1</PkgNewtonsoft_Json>
+    <PkgEASendMail Condition=" '$(PkgEASendMail)' == '' ">C:\Users\Administrator\.nuget\packages\easendmail\7.8.0.7</PkgEASendMail>
   </PropertyGroup>
 </Project>

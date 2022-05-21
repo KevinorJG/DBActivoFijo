@@ -1,5 +1,6 @@
 ﻿using DepreciationDBApp.Applications.Interfaces;
 using DepreciationDBApp.Domain.Entities;
+using DepreciationDBApp.Infrastructure.Repositories;
 using DepreciationDBApp.Presentation.Forms;
 using Microsoft.VisualBasic;
 using System;
@@ -15,14 +16,18 @@ namespace DepreciationDBApp.Forms
     {
         private IAssetService assetService;
         private IEmployeeServices employeeServices;
+        private IAssetEmployeeServices assetemployeeService;
+        private IExcelServices excelServices;
         public static int idActivo = 0;
         private string code = String.Empty;
         private bool borrado = false;
 
-        public Form1(IAssetService assetService, IEmployeeServices employeeServices)
+        public Form1(IAssetService assetService, IEmployeeServices employeeServices,IAssetEmployeeServices assetEmployeeServices, IExcelServices excelServices)
         {
             this.assetService = assetService;
             this.employeeServices = employeeServices;
+            this.assetemployeeService = assetEmployeeServices;
+            this.excelServices = excelServices;
             InitializeComponent();
         }
 
@@ -63,9 +68,9 @@ namespace DepreciationDBApp.Forms
                 }
                 else
                 {
-                    assetService.Create(asset);
-                    LoadData();
+                    assetService.Create(asset);                  
                     Clean();
+                    LoadData();
                 }
             }
         }
@@ -207,19 +212,22 @@ namespace DepreciationDBApp.Forms
 
         private void toolStripButton2_Click(object sender, EventArgs e)
         {
-            //ThreadStart thread = new ThreadStart(FormWindow);
-            //Thread thread1 = new Thread(thread);
-            //thread1.Start();
-
-            using (Form2 form = new Form2(assetService, employeeServices))
-            {
-                form.ShowDialog();
-            }
-
-
+            ThreadStart start = new ThreadStart(FormWindow);
+            Thread thread = new Thread(start);
+            thread.Start();          
 
         }
 
         public void FormWindow() => new Form2(assetService, employeeServices).ShowDialog();
+        public void FormWindow2() => new FormAsignar(assetemployeeService,assetService,employeeServices,excelServices).ShowDialog();
+
+        private void toolStripButton3_Click(object sender, EventArgs e)
+        {
+            ThreadStart start = new ThreadStart(FormWindow2);
+            Thread thread = new Thread(start);
+            thread.Start();
+
+        }
+       
     }
 }

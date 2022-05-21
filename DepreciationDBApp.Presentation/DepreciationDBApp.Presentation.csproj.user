@@ -10,5 +10,8 @@
     <Compile Update="Forms\Form2.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Forms\FormAsignar.cs">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
 </Project>
