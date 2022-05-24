@@ -34,7 +34,7 @@ namespace DepreciationDBApp.Presentation
             {
                 services.AddDbContext<DepreciacionDBContext>(options =>
                 {
-                    options.UseSqlServer(Configuration.GetConnectionString("Default"));
+                    options.UseSqlServer(Configuration.GetConnectionString("default"));
                 });
             });
 
@@ -48,7 +48,7 @@ namespace DepreciationDBApp.Presentation
 
             services.AddDbContext<DepreciacionDBContext>(options =>
             {
-                options.UseSqlServer(Configuration.GetConnectionString("Default"));
+                options.UseSqlServer(Configuration.GetConnectionString("default"));
             });
             services.AddScoped<IDepreciacionDBContext, DepreciacionDBContext>();
             services.AddScoped<IAssetRepository, EFAssetRepository>();

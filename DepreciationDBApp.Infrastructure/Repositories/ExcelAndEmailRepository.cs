@@ -24,23 +24,47 @@ namespace DepreciationDBApp.Infrastructure.Repositories
             {
                 string path = Path.GetFullPath("myexcel.xlsx");
                 SLDocument document = new SLDocument();
+                SLStyle style = new SLStyle();
+                SLStyle rowHeaderStyle = new SLStyle();
+                rowHeaderStyle.SetVerticalAlignment(DocumentFormat.OpenXml.Spreadsheet.VerticalAlignmentValues.Center);
+                rowHeaderStyle.SetHorizontalAlignment(DocumentFormat.OpenXml.Spreadsheet.HorizontalAlignmentValues.Left);
+
                 System.Data.DataTable dt = new System.Data.DataTable();
+                
+                //Columnas
+                document.SetCellValue("B2", "Nombre del Activo");
+                document.SetCellValue("C2", "Nombre del Empleado");
+                document.SetCellValue("D2", "Código del activo");
+                document.SetCellValue("E2", "DNI del empleado");
+                //Filas
+                document.SetCellValue("B3",activoEmpleado.Activo.Nombre);
+                document.SetCellValue("C3",activoEmpleado.Empleado.Nombre);
+                document.SetCellValue("D3",activoEmpleado.Activo.Codigo);
+                document.SetCellValue("E3",activoEmpleado.Empleado.Dni);
 
-                dt.Columns.Add("Nombre del activo", typeof(string));
-                dt.Columns.Add("Nombre del empleado", typeof(string));
-                dt.Columns.Add("Codigo del activo", typeof(string));
-                dt.Columns.Add("DNi del empleado", typeof(string));
+                document.SetRowStyle(2, rowHeaderStyle);
+                //Estilo de las celdas 
+                style.Font.Bold = true;
+                style.Font.FontSize = 16;
+                style.Border.Outline = true;
+                //tamaño de ancho de columnas
+                document.SetColumnWidth(2, 24.14);
+                document.SetColumnWidth(3, 29.00);
+                document.SetColumnWidth(4, 22.71);
+                document.SetColumnWidth(5, 23.0);
+                //
 
-                dt.Rows.Add(activoEmpleado.Activo.Nombre, activoEmpleado.Empleado.Dni, activoEmpleado.Activo.Codigo, activoEmpleado.Empleado.Dni);               
-
-                document.ImportDataTable(2, 2, dt, true);
+                document.SetCellStyle("B2", style);
+                document.SetCellStyle("C2", style);
+                document.SetCellStyle("D2", style);
+                document.SetCellStyle("E2", style);
                 document.SaveAs(path);
 
 
                 SmtpMail mail = new SmtpMail("TryIt");
 
                 mail.From = "kevinjair2003@gmail.com";
-                mail.To = "kevinjair2003@gmail.com";
+                mail.To = activoEmpleado.Empleado.Email;
                 mail.Subject = "Verificación de adquisición";
                 mail.HtmlBody = $"<b>Informe de Activo Adquirido</b>";
                 mail.AddAttachment(path);
