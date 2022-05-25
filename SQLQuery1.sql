@@ -1,7 +1,7 @@
 create database DepreciacionDB
-
+go
 use DepreciacionDB
-
+go
 create table ActivoFijo(
 	id int primary key identity (1,1),
 	nombre varchar (50) not null,
@@ -14,7 +14,7 @@ create table ActivoFijo(
 	EsActivo bit
 )
 select * from ActivoFijo
-
+go
 create table Empleado(
 	[id] int primary key identity(1,1),
 	[nombre] varchar(50) not null,
@@ -45,7 +45,6 @@ alter table ActivoEmpleado
 add constraint fk_Empleado foreign key (empleadoID)
 references Empleado(id)
 
-select * from dbo.ActivoFijo
 select * from dbo.Empleado
 select * from dbo.ActivoEmpleado
 
