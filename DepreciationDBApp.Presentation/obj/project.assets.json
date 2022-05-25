@@ -6653,19 +6653,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Administrator\\.nuget\\packages\\": {}
+    "C:\\Users\\JADPA28\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Administrator\\Desktop\\Repositorio Github\\DBActivoFijo\\DepreciationDBApp.Presentation\\DepreciationDBApp.Presentation.csproj",
+      "projectUniqueName": "C:\\Users\\JADPA28\\Desktop\\DBActivoFijo\\DepreciationDBApp.Presentation\\DepreciationDBApp.Presentation.csproj",
       "projectName": "DepreciationDBApp.Presentation",
-      "projectPath": "C:\\Users\\Administrator\\Desktop\\Repositorio Github\\DBActivoFijo\\DepreciationDBApp.Presentation\\DepreciationDBApp.Presentation.csproj",
-      "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Administrator\\Desktop\\Repositorio Github\\DBActivoFijo\\DepreciationDBApp.Presentation\\obj\\",
+      "projectPath": "C:\\Users\\JADPA28\\Desktop\\DBActivoFijo\\DepreciationDBApp.Presentation\\DepreciationDBApp.Presentation.csproj",
+      "packagesPath": "C:\\Users\\JADPA28\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\JADPA28\\Desktop\\DBActivoFijo\\DepreciationDBApp.Presentation\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
       "configFilePaths": [
-        "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\JADPA28\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -6679,14 +6683,14 @@
         "net5.0-windows7.0": {
           "targetAlias": "net5.0-windows",
           "projectReferences": {
-            "C:\\Users\\Administrator\\Desktop\\Repositorio Github\\DBActivoFijo\\DepreciationDBApp.Applications\\DepreciationDBApp.Applications.csproj": {
-              "projectPath": "C:\\Users\\Administrator\\Desktop\\Repositorio Github\\DBActivoFijo\\DepreciationDBApp.Applications\\DepreciationDBApp.Applications.csproj"
+            "C:\\Users\\JADPA28\\Desktop\\DBActivoFijo\\DepreciationDBApp.Applications\\DepreciationDBApp.Applications.csproj": {
+              "projectPath": "C:\\Users\\JADPA28\\Desktop\\DBActivoFijo\\DepreciationDBApp.Applications\\DepreciationDBApp.Applications.csproj"
             },
-            "C:\\Users\\Administrator\\Desktop\\Repositorio Github\\DBActivoFijo\\DepreciationDBApp.Domain\\DepreciationDBApp.Domain.csproj": {
-              "projectPath": "C:\\Users\\Administrator\\Desktop\\Repositorio Github\\DBActivoFijo\\DepreciationDBApp.Domain\\DepreciationDBApp.Domain.csproj"
+            "C:\\Users\\JADPA28\\Desktop\\DBActivoFijo\\DepreciationDBApp.Domain\\DepreciationDBApp.Domain.csproj": {
+              "projectPath": "C:\\Users\\JADPA28\\Desktop\\DBActivoFijo\\DepreciationDBApp.Domain\\DepreciationDBApp.Domain.csproj"
             },
-            "C:\\Users\\Administrator\\Desktop\\Repositorio Github\\DBActivoFijo\\DepreciationDBApp.Infrastructure\\DepreciationDBApp.Infrastructure.csproj": {
-              "projectPath": "C:\\Users\\Administrator\\Desktop\\Repositorio Github\\DBActivoFijo\\DepreciationDBApp.Infrastructure\\DepreciationDBApp.Infrastructure.csproj"
+            "C:\\Users\\JADPA28\\Desktop\\DBActivoFijo\\DepreciationDBApp.Infrastructure\\DepreciationDBApp.Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\JADPA28\\Desktop\\DBActivoFijo\\DepreciationDBApp.Infrastructure\\DepreciationDBApp.Infrastructure.csproj"
             }
           }
         }
@@ -6742,7 +6746,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
       }
     }
   }

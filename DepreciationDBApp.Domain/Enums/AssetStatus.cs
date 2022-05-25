@@ -9,6 +9,6 @@ namespace DepreciationDBApp.Domain.Enums
     public enum AssetStatus
     {
         Disponible,
-        NoDisponible
+        Asignado
     }
 }

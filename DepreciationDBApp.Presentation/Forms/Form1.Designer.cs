@@ -180,7 +180,7 @@ namespace DepreciationDBApp.Forms
             this.comboBoxEstado.FormattingEnabled = true;
             this.comboBoxEstado.Items.AddRange(new object[] {
             DepreciationDBApp.Domain.Enums.AssetStatus.Disponible,
-            DepreciationDBApp.Domain.Enums.AssetStatus.NoDisponible});
+            DepreciationDBApp.Domain.Enums.AssetStatus.Asignado});
             this.comboBoxEstado.Location = new System.Drawing.Point(311, 125);
             this.comboBoxEstado.Name = "comboBoxEstado";
             this.comboBoxEstado.Size = new System.Drawing.Size(148, 23);
