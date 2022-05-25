@@ -6415,23 +6415,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\JADPA28\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\Administrator\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\JADPA28\\Desktop\\DBActivoFijo\\DepreciationDBApp.Applications\\DepreciationDBApp.Applications.csproj",
+      "projectUniqueName": "C:\\Users\\Administrator\\Desktop\\Repositorio Github\\DBActivoFijo\\DepreciationDBApp.Applications\\DepreciationDBApp.Applications.csproj",
       "projectName": "DepreciationDBApp.Applications",
-      "projectPath": "C:\\Users\\JADPA28\\Desktop\\DBActivoFijo\\DepreciationDBApp.Applications\\DepreciationDBApp.Applications.csproj",
-      "packagesPath": "C:\\Users\\JADPA28\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\JADPA28\\Desktop\\DBActivoFijo\\DepreciationDBApp.Applications\\obj\\",
+      "projectPath": "C:\\Users\\Administrator\\Desktop\\Repositorio Github\\DBActivoFijo\\DepreciationDBApp.Applications\\DepreciationDBApp.Applications.csproj",
+      "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Administrator\\Desktop\\Repositorio Github\\DBActivoFijo\\DepreciationDBApp.Applications\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "C:\\Users\\JADPA28\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -6445,8 +6441,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\JADPA28\\Desktop\\DBActivoFijo\\DepreciationDBApp.Domain\\DepreciationDBApp.Domain.csproj": {
-              "projectPath": "C:\\Users\\JADPA28\\Desktop\\DBActivoFijo\\DepreciationDBApp.Domain\\DepreciationDBApp.Domain.csproj"
+            "C:\\Users\\Administrator\\Desktop\\Repositorio Github\\DBActivoFijo\\DepreciationDBApp.Domain\\DepreciationDBApp.Domain.csproj": {
+              "projectPath": "C:\\Users\\Administrator\\Desktop\\Repositorio Github\\DBActivoFijo\\DepreciationDBApp.Domain\\DepreciationDBApp.Domain.csproj"
             }
           }
         }
@@ -6475,7 +6471,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
       }
     }
   }
